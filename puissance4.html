@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="puissance4.css">
+    <script   src="puissance4.js" defer></script>
+</head>
+<body>
+    <h1>Puissance 4</h1>
+    <h2 id="winner"></h2>
+    <h3 id="current-player">Joueur actuel : <span id="couleur-du-joueur"></span></h3>
+    <div id="gameContainer"></div>
+    <br>
+    <button id="restart">Recommencer la partie</button>
+     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Puissance4('#gameContainer', {
+                rows: 6,
+                columns: 7,
+                // joueur1: 'green',
+                // joeur2: 'blue'
+            });
+        });
+    </script> 
+</body>
+</html>

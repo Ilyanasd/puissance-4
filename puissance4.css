@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+}
+
+#gameContainer {
+    height: 542px;
+    width: 630px; 
+    background-color: blue;
+    border: 10px solid rgb(41, 41, 88);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px ;
+    width: 77px; 
+    margin: 6px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative; 
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-470px); 
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.red-piece, .yellow-piece {
+    animation: slideIn 0.5s ease forwards; 
+}
